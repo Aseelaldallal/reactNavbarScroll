@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Section style={{ marginTop: '50px' }} id="Test1" title="Test1" />
+          <Section className="first" id="Test1" title="Test1" />
           <Section id="Test2" title="Test2" />
           <Section id="Test3" title="Test3" />
         </Layout>

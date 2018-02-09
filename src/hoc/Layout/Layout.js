@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Auxillary from '../Auxillary';
 import Navbar from '../../Components/Navbar/Navbar';
+import SideDrawer from '../../Components/Navbar/SideDrawer/SideDrawer';
 import './styles.css';
 
 class Layout extends Component {
@@ -22,10 +23,10 @@ class Layout extends Component {
     return (
       <Auxillary>
         <Navbar drawerToggleClicked={this.sideDrawerToggleHandler} />
-        {/* <SideDrawer
+        <SideDrawer
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
-        /> */}
+        />
         <main>{this.props.children}</main>
       </Auxillary>
     );

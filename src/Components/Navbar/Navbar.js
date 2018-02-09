@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import Auxillary from '../../hoc/Auxillary';
 import MenuItem from './MenuItem/MenuItem';
+import DrawerToggle from './SideDrawer/DrawerToggle/DrawerToggle';
 
 import './styles.css';
 
@@ -40,6 +41,7 @@ class Navbar extends Component {
   render() {
     return (
       <Auxillary>
+        <DrawerToggle clicked={this.props.drawerToggleClicked} />
         <div className="navbar">
           <MenuItem to="Test3" name="Test3" />
           <MenuItem to="Test2" name="Test2" />
