@@ -6,6 +6,10 @@
   height: 50px;
 }
 
+.menuItemsContainer {
+  text-align: right;
+}
+
 @media (max-width: 499px) {
   .navbar {
     display: none;

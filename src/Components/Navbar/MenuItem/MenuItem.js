@@ -12,6 +12,7 @@ const MenuItem = props => {
       smooth={true}
       offset={-50}
       duration={500}
+      onClick={props.clicked}
     >
       {props.name}
     </Link>

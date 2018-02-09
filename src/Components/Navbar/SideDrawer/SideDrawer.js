@@ -15,9 +15,9 @@ const sideDrawer = props => {
     <Auxillary>
       <Backdrop show={props.open} clicked={props.closed} />
       <div className={attachedClasses.join(' ')} onClick={props.closed}>
-        <a href="#Test1">Test1</a>
-        <a href="#Test2">Test2</a>
-        <a href="#Test3">Test3</a>
+        <MenuItem to="Test1" name="Test1" clicked={props.closed} />
+        <MenuItem to="Test2" name="Test2" clicked={props.closed} />
+        <MenuItem to="Test3" name="Test3" clicked={props.closed} />
       </div>
     </Auxillary>
   );

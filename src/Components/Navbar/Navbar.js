@@ -8,12 +8,8 @@ import './styles.css';
 
 class Navbar extends Component {
   componentDidMount() {
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log('begin', arguments);
-    });
-    Events.scrollEvent.register('end', function(to, element) {
-      console.log('end', arguments);
-    });
+    Events.scrollEvent.register('begin', function(to, element) {});
+    Events.scrollEvent.register('end', function(to, element) {});
     scrollSpy.update();
   }
 
@@ -43,9 +39,11 @@ class Navbar extends Component {
       <Auxillary>
         <DrawerToggle clicked={this.props.drawerToggleClicked} />
         <div className="navbar">
-          <MenuItem to="Test3" name="Test3" />
-          <MenuItem to="Test2" name="Test2" />
-          <MenuItem to="Test1" name="Test1" />
+          <div className="menuItemsContainer">
+            <MenuItem to="Test1" name="Test1" />
+            <MenuItem to="Test2" name="Test2" />
+            <MenuItem to="Test3" name="Test3" />
+          </div>
         </div>
       </Auxillary>
     );
