@@ -1,0 +1,12 @@
+.menuItem {
+  line-height: 50px;
+  color: black;
+  text-decoration: none;
+  width: 100px;
+  float: right;
+}
+
+.active {
+  color: white;
+  background-color: black;
+}
