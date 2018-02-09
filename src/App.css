@@ -1,9 +1,0 @@
-.first {
-  margin-top: 50px;
-}
-
-@media (min-width: 499) {
-  .first {
-    margin-top: 0;
-  }
-}

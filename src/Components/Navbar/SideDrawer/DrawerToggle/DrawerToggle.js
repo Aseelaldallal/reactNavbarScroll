@@ -3,10 +3,12 @@ import './styles.css';
 
 const drawerToggle = props => {
   return (
-    <div className="drawerToggle" onClick={props.clicked}>
-      <div />
-      <div />
-      <div />
+    <div className="drawerToggleBar">
+      <div className="drawerToggle" onClick={props.clicked}>
+        <div />
+        <div />
+        <div />
+      </div>
     </div>
   );
 };

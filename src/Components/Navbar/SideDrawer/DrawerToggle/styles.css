@@ -21,4 +21,14 @@
   .drawerToggle {
     display: none;
   }
+  .drawerToggleBar {
+    display: none;
+  }
+}
+
+.drawerToggleBar {
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
